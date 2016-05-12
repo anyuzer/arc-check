@@ -1,0 +1,27 @@
+{
+  "name": "arc-check",
+  "version": "1.0.0",
+  "description": "An ES6 class that accepts include/exclude regular expression and callbacks to check a variable",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://anyuzer@github.com/anyuzer/arc-check.git"
+  },
+  "keywords": [
+    "filter"
+  ],
+  "author": "Ian Reid",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anyuzer/arc-check/issues"
+  },
+  "homepage": "https://github.com/anyuzer/arc-check#readme",
+  "dependencies": {
+    "arc-is": "^1.0.0",
+    "arc-array": "^1.0.0",
+    "arc-object": "^1.0.0"
+  }
+}
