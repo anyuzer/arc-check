@@ -102,4 +102,4 @@ class ArcCheck{
     }
 }
 
-module.exports = Check;
+module.exports = ArcCheck;
