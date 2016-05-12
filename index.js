@@ -4,7 +4,7 @@ var is = require('arc-is');
 var ArcArray = require('arc-array');
 var ArcObject = require('arc-object');
 
-class Check{
+class ArcCheck{
     constructor(){
         this.includes = new ArcObject;
         this.excludes = new ArcObject;
