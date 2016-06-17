@@ -1,10 +1,10 @@
 {
   "name": "arc-check",
   "version": "1.0.0",
-  "description": "An ES6 class that accepts include/exclude regular expression and callbacks to check a variable",
+  "description": "An ES6 class to evaluate values against multiple complex inclusion/exclusion rules",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tap test/*.js"
   },
   "repository": {
     "type": "git",
@@ -20,8 +20,11 @@
   },
   "homepage": "https://github.com/anyuzer/arc-check#readme",
   "dependencies": {
-    "arc-is": "^1.0.0",
-    "arc-array": "^1.0.0",
-    "arc-object": "^1.0.0"
+    "arc-array": "^2.0.0",
+    "arc-is": "^1.0.2",
+    "arc-object": "^1.0.1"
+  },
+  "devDependencies": {
+    "tap": "^5.7.2"
   }
 }
