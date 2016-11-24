@@ -1,6 +1,6 @@
 {
   "name": "arc-check",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "An ES6 class to evaluate values against multiple complex inclusion/exclusion rules",
   "main": "index.js",
   "scripts": {
