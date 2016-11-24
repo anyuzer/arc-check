@@ -72,7 +72,7 @@ class ArcCheck{
         //We will be in 2 states at this point, we will have inclusionCallbacks and we will have not done RegX inclusion checks, or the RegX inclusion checks will have failed. If so, check
         if(this.iCallbacks.length && !this.includes.count() || this.iCallbacks.length && !includeCheck){
             iCallbackCheck = false;
-            this.iCallbacks.each(function(_callback){
+            this.iCallbacks.each(function(_index,_callback){
                 if(_callback(_string)){
                     iCallbackCheck = true;
                     includeCheck = true;
@@ -100,7 +100,7 @@ class ArcCheck{
             //Again we have two states, we have exclusionCallbacks and have not done any RegX exclusion checks, or the RegX exclusion checks will have passed and we need to also check against these
             if(this.xCallbacks.length && !this.excludes.count() || this.xCallbacks.length && excludeCheck){
                 //Default xCallback check is true
-                this.xCallbacks.each(function(_callback){
+                this.xCallbacks.each(function(_index,_callback){
                     if(_callback(_string)){
                         xCallbackCheck = false;
                         return false;
