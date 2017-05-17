@@ -1,8 +1,6 @@
-"use strict";
-
-var is = require('arc-is');
-var ArcArray = require('arc-array');
-var ArcObject = require('arc-object');
+const is = require('arc-is');
+const ArcArray = require('arc-array');
+const ArcObject = require('arc-object');
 
 class ArcCheck{
     constructor(){
@@ -59,7 +57,7 @@ class ArcCheck{
         if(this.includes.count()){
             includeCheck = false;
             if(is(_string) === 'string'){
-                this.includes.each(function(_key,_RX){
+                this.includes.forEach(function(_RX){
                     let rxResult = _RX.exec(_string);
                     if(is(rxResult) === 'array' && rxResult[0] !== ''){
                         includeCheck = true;
@@ -72,7 +70,7 @@ class ArcCheck{
         //We will be in 2 states at this point, we will have inclusionCallbacks and we will have not done RegX inclusion checks, or the RegX inclusion checks will have failed. If so, check
         if(this.iCallbacks.length && !this.includes.count() || this.iCallbacks.length && !includeCheck){
             iCallbackCheck = false;
-            this.iCallbacks.each(function(_index,_callback){
+            this.iCallbacks.forEach(function(_callback){
                 if(_callback(_string)){
                     iCallbackCheck = true;
                     includeCheck = true;
@@ -86,7 +84,7 @@ class ArcCheck{
             if(this.excludes.count()){
                 //Our exclusion check is set to true initially (by default)
                 if(is(_string) === 'string'){
-                    this.excludes.each(function(_key,_RX){
+                    this.excludes.forEach(function(_RX){
                         let rxResult = _RX.exec(_string);
                         if(is(rxResult) === 'array' && rxResult[0] !== ''){
                             //If it matches, we want to fail the check (return false)
@@ -100,7 +98,7 @@ class ArcCheck{
             //Again we have two states, we have exclusionCallbacks and have not done any RegX exclusion checks, or the RegX exclusion checks will have passed and we need to also check against these
             if(this.xCallbacks.length && !this.excludes.count() || this.xCallbacks.length && excludeCheck){
                 //Default xCallback check is true
-                this.xCallbacks.each(function(_index,_callback){
+                this.xCallbacks.forEach(function(_callback){
                     if(_callback(_string)){
                         xCallbackCheck = false;
                         return false;
