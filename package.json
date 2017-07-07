@@ -20,9 +20,7 @@
   },
   "homepage": "https://github.com/anyuzer/arc-check#readme",
   "dependencies": {
-    "arc-array": "^4.0.1",
-    "arc-is": "1.0.5",
-    "arc-object": "^2.0.0"
+    "arc-is": "1.0.5"
   },
   "devDependencies": {
     "tap": "^5.7.2"
