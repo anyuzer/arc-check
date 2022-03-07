@@ -4,7 +4,7 @@
   "description": "An ES6 class to evaluate values against multiple complex inclusion/exclusion rules",
   "main": "index.js",
   "scripts": {
-    "test": "tap test/*.js"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -20,9 +20,9 @@
   },
   "homepage": "https://github.com/anyuzer/arc-check#readme",
   "dependencies": {
-    "arc-is": "1.0.5"
+    "arc-is": "^1.0.8"
   },
   "devDependencies": {
-    "tap": "^5.7.2"
+    "jest": "^27.5.1"
   }
 }
