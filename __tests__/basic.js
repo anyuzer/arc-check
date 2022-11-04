@@ -1,8 +1,8 @@
-const is = require('arc-is');
-const Check = require('../');
+import is from 'arc-is';
+import ArcCheck from "../index.js";
 
 describe('ArcCheck tests', () => {
-    let checkIt = new Check();
+    let checkIt = new ArcCheck();
     it('Should be the correct types', () => {
         expect(is(checkIt)).toBe('object');
         expect(is(checkIt,true)).toBe('ArcCheck');

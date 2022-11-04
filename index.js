@@ -1,4 +1,4 @@
-const is = require('arc-is');
+import is from 'arc-is';
 
 class ArcCheck{
     constructor(){
@@ -106,7 +106,7 @@ class ArcCheck{
                 });
             }
         }
-        
+
         return (excludeCheck && includeCheck && iCallbackCheck && xCallbackCheck ? true : false);
     }
 
@@ -115,4 +115,4 @@ class ArcCheck{
     }
 }
 
-module.exports = ArcCheck;
+export default ArcCheck;
