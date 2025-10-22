@@ -9,8 +9,8 @@ describe('ArcCheck tests', () => {
     });
 
     it('Should throw an error if we attempt to add the wrong type of include or exclude', () => {
-        expect(() => { checkIt.addInclude('STRING') }).toThrowError();
-        expect(() => { checkIt.addExclude('STRING') }).toThrowError();
+        expect(() => { checkIt.addInclude('STRING') }).toThrow();
+        expect(() => { checkIt.addExclude('STRING') }).toThrow();
     })
 
     it('Should add a complex set of evaluations, and successfully check against rules', () => {

@@ -3,6 +3,7 @@
   "version": "2.0.0",
   "description": "An ES6 class to evaluate values against multiple complex inclusion/exclusion rules",
   "main": "index.js",
+  "types": "index.d.ts",
   "type": "module",
   "scripts": {
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage"
@@ -21,9 +22,9 @@
   },
   "homepage": "https://github.com/anyuzer/arc-check#readme",
   "dependencies": {
-    "arc-is": "^2.0.0"
+    "arc-is": "^2.1.0"
   },
   "devDependencies": {
-    "jest": "^29.2.2"
+    "jest": "^30.2.0"
   }
 }
